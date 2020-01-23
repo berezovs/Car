@@ -10,7 +10,9 @@ public class CarTest {
 		Car corvette = new Car("red");
 
 		assertEquals("grey", jalopy.getColor());
+
 		assertEquals("red", corvette.getColor());
+
 		assertEquals(2, Car.getCarCount());
 	}
 
