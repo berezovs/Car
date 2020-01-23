@@ -5,10 +5,10 @@ public class Car {
 	private int mph = 0;
 
 	Car() {
-		this("grey");
+		this("grey", Transmission.AUTOMATIC);
 	}
 
-	Car(String color) {
+	Car(String color, Transmission t) {
 		this.color = color;
 		++Car.CarCount;
 	}
