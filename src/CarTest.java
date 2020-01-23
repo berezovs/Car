@@ -12,6 +12,8 @@ public class CarTest {
 
 		assertEquals("grey", jalopy.getColor());
 
+		assertEquals(Transmission.AUTOMATIC, jalopy.getTransmissionType());
+
 		assertEquals("red", corvette.getColor());
 
 		assertEquals(2, Car.getCarCount());
@@ -21,6 +23,8 @@ public class CarTest {
 		corvette.accelerate(34);
 
 		assertEquals(34, corvette.getMPH());
+
+		assertEquals(Transmission.MANUAL, corvette.getTransmissionType());
 
 	}
 

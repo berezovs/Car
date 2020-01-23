@@ -3,6 +3,7 @@ public class Car {
 	private String color;
 	private static int CarCount = 0;
 	private int mph = 0;
+	private Transmission transmissionType;
 
 	Car() {
 		this("grey", Transmission.AUTOMATIC);
@@ -10,6 +11,7 @@ public class Car {
 
 	Car(String color, Transmission t) {
 		this.color = color;
+		this.transmissionType = t;
 		++Car.CarCount;
 	}
 
@@ -27,5 +29,9 @@ public class Car {
 
 	public void accelerate(int newSpeed) {
 		this.mph = newSpeed;
+	}
+
+	public Transmission getTransmissionType() {
+		return this.transmissionType;
 	}
 }
